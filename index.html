@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JS 4All — интерактивный курс JavaScript</title>
+<meta name="description" content="JS 4All — интерактивный курс JavaScript по мотивам книги «Выразительный JavaScript»: уроки, редактор кода и автоматическая проверка заданий.">
+<meta name="theme-color" content="#f7df1e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f7df1e'/%3E%3Ctext x='30' y='29' text-anchor='end' font-family='Arial,sans-serif' font-weight='700' font-size='17' fill='%23323330'%3EJS%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/book.css">
+<script>
+(function(){function show(m){var b=document.getElementById('errbar');if(!b){b=document.createElement('div');b.id='errbar';b.setAttribute('role','alert');b.style.cssText='position:fixed;left:0;right:0;bottom:0;z-index:99;background:#b42318;color:#fff;padding:10px 16px;font:13px/1.4 system-ui,sans-serif';(document.body||document.documentElement).appendChild(b)}b.textContent='Ошибка скрипта: '+m}
+window.addEventListener('error',function(e){show(e.message||'неизвестная ошибка')});
+window.addEventListener('unhandledrejection',function(e){show(String(e.reason&&e.reason.message||e.reason))})})();
+</script>
+</head><body>
+<header class="top">
+  <button class="ghost" id="menu" aria-controls="toc" aria-expanded="false">☰ Оглавление</button>
+  <a class="brand" href="#/"><svg viewBox="0 0 630 630" aria-hidden="true"><rect width="630" height="630" fill="#f7df1e"/><text x="592" y="590" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="340" fill="#323330">JS</text></svg>JS 4All</a>
+  <div class="meter" role="progressbar" aria-label="Прогресс курса" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="bar"></i></div>
+  <span id="pc"></span>
+</header>
+<a class="skip-link" href="#view">Перейти к содержимому</a>
+<div class="shell"><nav id="toc" aria-label="Оглавление"></nav><main id="view"></main></div>
+<div id="toast" role="status"></div>
+<noscript><p style="padding:16px">Для работы курса нужен включённый JavaScript.</p></noscript>
+  <script src="js/bundles/main.js?v=1.2.0"></script>
+  </body></html>
